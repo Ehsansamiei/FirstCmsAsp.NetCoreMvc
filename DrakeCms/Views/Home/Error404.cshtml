@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Page Not Found";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 120px;
+            color: #fff;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #f8f9fa;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            background: #ff4b5c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+            a:hover {
+                background: #ff1e3c;
+                transform: scale(1.05);
+            }
+
+        .icon {
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>The page you are looking for doesn't exist or has been moved.</p>
+        <a href="/">Go Back Home</a>
+        <div class="icon">🔍</div>
+    </div>
+</body>
+</html>

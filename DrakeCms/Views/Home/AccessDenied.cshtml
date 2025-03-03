@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Access Denied";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 60px;
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #dc3545;
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #6c757d;
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .back-home-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+        }
+
+            .back-home-btn:hover {
+                background-color: #0056b3;
+                box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div>
+        <h1>Access Denied</h1>
+        <p>You do not have permission to access this page.<br>Please contact your administrator if you believe this is a mistake.</p>
+        <a href="/" class="back-home-btn">Return to Home</a>
+    </div>
+</body>
+</html>

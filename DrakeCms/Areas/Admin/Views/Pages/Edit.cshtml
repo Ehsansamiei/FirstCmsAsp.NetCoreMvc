@@ -1,0 +1,386 @@
+﻿@using DrakeCms.Areas.Admin.Dtos
+@model PageDto
+
+
+@{
+    ViewData["Title"] = "Edit";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+    <style>
+        /* استایل عمومی برای فرم */
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            /* استایل برای divهایی که شامل برچسب‌ها و ورودی‌ها هستند */
+            form div {
+                margin-bottom: 15px;
+            }
+
+            /* استایل برای برچسب‌ها */
+            form label {
+                font-weight: bold;
+                font-size: 16px;
+                color: #333;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            /* استایل برای ورودی‌های متنی */
+            form input[type="text"],
+            form textarea,
+            form select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+                background-color: #fff;
+                box-sizing: border-box;
+                transition: border-color 0.3s ease;
+            }
+
+                /* تغییر رنگ حاشیه ورودی‌ها هنگام فوکوس */
+                form input[type="text"]:focus,
+                form textarea:focus,
+                form select:focus {
+                    border-color: #007bff;
+                    outline: none;
+                }
+
+            /* استایل برای چک‌باکس */
+            form input[type="checkbox"] {
+                margin-top: 5px;
+            }
+
+            /* استایل برای دکمه‌ها */
+            form button,
+            form a.btn {
+                padding: 12px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+
+                /* دکمه ارسال (Save) */
+                form button[type="submit"] {
+                    background-color: #28a745;
+                    color: white;
+                    border: none;
+                }
+
+            /* دکمه بازگشت (Back to list) */
+            form a.btn-info {
+                background-color: #17a2b8;
+                color: white;
+                margin-left: 10px;
+            }
+
+                /* تغییر رنگ دکمه‌ها هنگام hover */
+                form button[type="submit"]:hover,
+                form a.btn-info:hover {
+                    background-color: #218838;
+                    transform: translateY(-3px);
+                }
+
+                form a.btn-info:hover {
+                    background-color: #138496;
+                    transform: translateY(-3px);
+                }
+
+            /* استایل برای دکمه‌ها به صورت ردیف (تراز افقی) */
+            form div.buttons {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+            }
+
+    </style>
+</head>
+
+
+<form action="/Admin/pages/Edit/@Model.PageId" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="PageId" value="@Model.PageId"/>
+
+	<div>
+		<label for="GroupId">Group Page</label>
+		@Html.DropDownListFor(Model => Model.GroupId, (SelectList)ViewBag.Groups, "Group Page")
+	</div>
+
+	<div>
+		<label for="Ttile">Title</label>
+		@Html.EditorFor(Model => Model.Title)
+	</div>
+
+	<div>
+		<label for="ShortDescription">Short Description</label>
+		@Html.TextAreaFor(Model => Model.ShortDescription)
+	</div>
+
+	<div>
+		<label for="Text">Text</label>
+		@Html.TextAreaFor(Model => Model.Text)
+	</div>
+
+	<div>
+		<label for="ShowInSlider">Show in slider</label>
+		@Html.CheckBoxFor(Model => Model.ShowInSlider)
+	</div>
+
+	<div>
+		<label for="ImageFile">Image</label>
+		<input type="file" name="ImageFile"/>
+		@if(Model.ImageFile != null)
+		{
+			<p>Current Image :</p>
+			<img src="@Url.Content("~/PageImages/"+ Model.ImageFile)" alt="Current Image" width="100"/>
+		}
+	</div>
+
+	<div class="buttons">
+		<button type="submit">Save Changes</button>
+		<a href="/Admin/Pages" class="btn btn-info"> Back to list</a>
+	</div>
+</form>
+
+
+
+
+
+
+
+
+@* @using DataLayer *@
+@* @using DrakeCms.Areas.Admin.Dtos *@
+@* @model Page *@
+
+@* @{ *@
+@*     ViewData["Title"] = "Edit"; *@
+@*     Layout = "~/Views/Shared/_Layout.cshtml"; *@
+@* } *@
+
+@* <head> *@
+@*     <style> *@
+@*         /* استایل عمومی برای فرم */ *@
+@*         form { *@
+@*             max-width: 800px; *@
+@*             margin: 0 auto; *@
+@*             padding: 20px; *@
+@*             background-color: #f9f9f9; *@
+@*             border-radius: 8px; *@
+@*             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); *@
+@*         } *@
+
+@*             /* استایل برای divهایی که شامل برچسب‌ها و ورودی‌ها هستند */ *@
+@*             form div { *@
+@*                 margin-bottom: 15px; *@
+@*             } *@
+
+@*             /* استایل برای برچسب‌ها */ *@
+@*             form label { *@
+@*                 font-weight: bold; *@
+@*                 font-size: 16px; *@
+@*                 color: #333; *@
+@*                 display: block; *@
+@*                 margin-bottom: 8px; *@
+@*             } *@
+
+@*             /* استایل برای ورودی‌های متنی */ *@
+@*             form input[type="text"], *@
+@*             form textarea, *@
+@*             form select { *@
+@*                 width: 100%; *@
+@*                 padding: 12px; *@
+@*                 border: 1px solid #ccc; *@
+@*                 border-radius: 4px; *@
+@*                 font-size: 14px; *@
+@*                 background-color: #fff; *@
+@*                 box-sizing: border-box; *@
+@*                 transition: border-color 0.3s ease; *@
+@*             } *@
+
+@*                 /* تغییر رنگ حاشیه ورودی‌ها هنگام فوکوس */ *@
+@*                 form input[type="text"]:focus, *@
+@*                 form textarea:focus, *@
+@*                 form select:focus { *@
+@*                     border-color: #007bff; *@
+@*                     outline: none; *@
+@*                 } *@
+
+@*             /* استایل برای چک‌باکس */ *@
+@*             form input[type="checkbox"] { *@
+@*                 margin-top: 5px; *@
+@*             } *@
+
+@*             /* استایل برای دکمه‌ها */ *@
+@*             form button, *@
+@*             form a.btn { *@
+@*                 padding: 12px 20px; *@
+@*                 font-size: 16px; *@
+@*                 border-radius: 4px; *@
+@*                 cursor: pointer; *@
+@*                 transition: background-color 0.3s ease, transform 0.2s ease; *@
+@*                 display: inline-block; *@
+@*                 text-align: center; *@
+@*                 text-decoration: none; *@
+@*                 margin-top: 20px; *@
+@*             } *@
+
+@*                 /* دکمه ارسال (Save) */ *@
+@*                 form button[type="submit"] { *@
+@*                     background-color: #28a745; *@
+@*                     color: white; *@
+@*                     border: none; *@
+@*                 } *@
+
+@*             /* دکمه بازگشت (Back to list) */ *@
+@*             form a.btn-info { *@
+@*                 background-color: #17a2b8; *@
+@*                 color: white; *@
+@*                 margin-left: 10px; *@
+@*             } *@
+
+@*                 /* تغییر رنگ دکمه‌ها هنگام hover */ *@
+@*                 form button[type="submit"]:hover, *@
+@*                 form a.btn-info:hover { *@
+@*                     background-color: #218838; *@
+@*                     transform: translateY(-3px); *@
+@*                 } *@
+
+@*                 form a.btn-info:hover { *@
+@*                     background-color: #138496; *@
+@*                     transform: translateY(-3px); *@
+@*                 } *@
+
+@*             /* استایل برای دکمه‌ها به صورت ردیف (تراز افقی) */ *@
+@*             form div.buttons { *@
+@*                 display: flex; *@
+@*                 justify-content: flex-start; *@
+@*                 align-items: center; *@
+@*                 gap: 10px; *@
+@*             } *@
+
+@*     </style> *@
+@* </head> *@
+
+
+
+
+@* <form action="/Admin/Pages/Edit" method="post" enctype="multipart/form-data"> *@
+@*      <input type="hidden" name="Id" value="@Model.PageId" />  *@
+@* 	<div> *@
+@* 		<label for="GroupId">Group Page</label> *@
+@* 		@Html.DropDownListFor(Model => Model.GroupId, (SelectList)ViewBag.Groups, "Group Page") *@
+@* 	</div> *@
+
+@* 	<div> *@
+@* 		<label for="Title">Title</label> *@
+@* 		@Html.EditorFor(Model => Model.Title) *@
+@* 	</div> *@
+
+@* 	<div> *@
+@* 		<label for="ShortDescription">Short description</label> *@
+@* 		@Html.TextAreaFor(Model => Model.ShortDescription) *@
+@* 	</div> *@
+
+@* 	<div> *@
+@* 		<label for="Text">Text</label> *@
+@* 		@Html.TextAreaFor(Model => Model.Text) *@
+@* 	</div> *@
+
+
+@* 	<div> *@
+@* 		<label for="ShowInSlider">Show in slider</label> *@
+@* 		@Html.CheckBoxFor(Model => Model.ShowInSlider) *@
+@* 	</div> *@
+
+@* 	<div> *@
+@* 		<label for="ImageFile">Image</label> *@
+@* 		<input type="file" name="ImageFile" /> *@
+@* 	</div> *@
+@* 	<div class="buttons"> *@
+@* 		<button type="submit">Save</button> *@
+@* 		<a href="/Admin/Pages" class="btn btn-info">Back to list</a> *@
+@* 	</div> *@
+@* </form> *@
+
+
+
+
+
+
+@* <h1>Edit</h1> *@
+
+@* <h4>Page</h4> *@
+@* <hr /> *@
+@* <div class="row"> *@
+@*     <div class="col-md-4"> *@
+@*         <form asp-action="Edit"> *@
+@*             <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+@*             <input type="hidden" asp-for="PageId" /> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="GroupId" class="control-label"></label> *@
+@*                 <input asp-for="GroupId" class="form-control" /> *@
+@*                 <span asp-validation-for="GroupId" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Title" class="control-label"></label> *@
+@*                 <input asp-for="Title" class="form-control" /> *@
+@*                 <span asp-validation-for="Title" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="ShortDescription" class="control-label"></label> *@
+@*                 <textarea asp-for="ShortDescription" class="form-control"></textarea> *@
+@*                 <span asp-validation-for="ShortDescription" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Text" class="control-label"></label> *@
+@*                 <textarea asp-for="Text" class="form-control"></textarea> *@
+@*                 <span asp-validation-for="Text" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Visit" class="control-label"></label> *@
+@*                 <input asp-for="Visit" class="form-control" /> *@
+@*                 <span asp-validation-for="Visit" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="ImageName" class="control-label"></label> *@
+@*                 <input asp-for="ImageName" class="form-control" /> *@
+@*                 <span asp-validation-for="ImageName" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group form-check"> *@
+@*                 <label class="form-check-label"> *@
+@*                     <input class="form-check-input" asp-for="ShowInSlider" /> @Html.DisplayNameFor(model => model.ShowInSlider) *@
+@*                 </label> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="CreateDate" class="control-label"></label> *@
+@*                 <input asp-for="CreateDate" class="form-control" /> *@
+@*                 <span asp-validation-for="CreateDate" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <input type="submit" value="Save" class="btn btn-primary" /> *@
+@*             </div> *@
+@*         </form> *@
+@*     </div> *@
+@* </div> *@
+
+@* <div> *@
+@*     <a asp-action="Index">Back to List</a> *@
+@* </div> *@
+

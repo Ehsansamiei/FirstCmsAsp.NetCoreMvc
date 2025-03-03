@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar استایل */
+        .navbar {
+            background-color: #444;
+            padding: 10px 20px;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+
+            .navbar .btn {
+                color: white;
+                border: none;
+                transition: 0.3s;
+            }
+
+                .navbar .btn:hover {
+                    background-color: #575757;
+                }
+
+        /* سایدبار */
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            top: 49px;
+            bottom:0;
+            height:100vh;
+            padding-top: 20px;
+        }
+
+            .sidebar a {
+                display: block;
+                color: white;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+                .sidebar a:hover, .dropdown-item:hover {
+                    background-color: #575757;
+                }
+
+        /* محتوای اصلی */
+        .content {
+            margin-left: 250px;
+            margin-top: 60px;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar بالا -->
+    <nav class="navbar d-flex justify-content-between">
+        <div>
+            <a href="/">Home</a>
+            <a href="/profile">Profile</a>
+            <a href="/settings">Settings</a>
+        </div>
+        <div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <span class="text-white me-3">Welcome Back @User.Identity.Name </span>
+                <a href="/Account/Logout" class="btn btn-danger btn-sm">Logout</a>
+            }
+            else
+            {
+                <a href="/Account/Login" class="btn btn-primary btn-sm">Login</a>
+            }
+        </div>
+    </nav>
+
+    <!-- سایدبار -->
+    <div class="sidebar">
+        <h2 class="text-center" style="top:5px;">Side Bar</h2>
+        <a href="/admin">Admin main page</a>
+        <a href="/admin/PageGroup">PageGroups</a>
+        <a href="/admin/Pages">Pages</a>
+    </div>
+
+    <!-- محتوای صفحه -->
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+
+</body>
+</html>

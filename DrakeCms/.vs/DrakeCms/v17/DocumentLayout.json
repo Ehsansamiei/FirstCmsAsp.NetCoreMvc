@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\controllers\\pagegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\controllers\\pagegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\home\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\home\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{021590D1-D7AC-424B-B205-AD9BDF5D9336}|..\\DataLayer\\DataLayer.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\datalayer\\models\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\home\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\home\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\drakecms\\areas\\admin\\views\\news\\detailsofpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9948A1A3-01AE-42F2-AD60-EEF194404536}|DrakeCms.csproj|solutionrelative:areas\\admin\\views\\news\\detailsofpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{021590D1-D7AC-424B-B205-AD9BDF5D9336}|..\\DataLayer\\DataLayer.csproj|d:\\projects\\myprojects\\c#\\asp.net core mvc\\after\\datalayer\\migrations\\20250218070936_add-role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:914068609:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:988995131:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:532231748:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:914069857:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error404.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\Error404.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Error404.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\Error404.cshtml*",
+              "RelativeToolTip": "Views\\Home\\Error404.cshtml*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T08:22:40.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T08:12:42.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PagesController.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\PagesController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T08:00:59.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageGroupController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\PageGroupController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PageGroupController.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\PageGroupController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\PageGroupController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwKkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:58:47.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAgwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T07:57:01.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:25:15.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Home\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Home\\AccessDenied.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T07:21:51.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:21:08.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:11:09.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250218070936_Add-Role.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DataLayer\\Migrations\\20250218070936_Add-Role.cs",
+              "RelativeDocumentMoniker": "..\\DataLayer\\Migrations\\20250218070936_Add-Role.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DataLayer\\Migrations\\20250218070936_Add-Role.cs",
+              "RelativeToolTip": "..\\DataLayer\\Migrations\\20250218070936_Add-Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:09:36.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminLogin.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DataLayer\\Models\\AdminLogin.cs",
+              "RelativeDocumentMoniker": "..\\DataLayer\\Models\\AdminLogin.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DataLayer\\Models\\AdminLogin.cs",
+              "RelativeToolTip": "..\\DataLayer\\Models\\AdminLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:07:21.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAUwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T06:33:50.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DetailsOfPage.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\News\\DetailsOfPage.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\News\\DetailsOfPage.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\News\\DetailsOfPage.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\News\\DetailsOfPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T06:30:21.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T06:06:16.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T05:58:19.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T05:54:01.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T05:46:14.2Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

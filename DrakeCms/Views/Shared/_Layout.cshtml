@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .navbar {
+            background-color: #444;
+            padding: 10px 20px;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+
+            .navbar .btn {
+                color: white;
+                border: none;
+                transition: 0.3s;
+            }
+
+                .navbar .btn:hover {
+                    background-color: #575757;
+                }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: calc(100vh - 50px);
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 49px;
+            left: 0;
+            height: 100vh;
+            bottom:0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            overflow: visible; 
+        }
+
+            .sidebar a {
+                display: block;
+                color: white;
+                padding: 12px 20px; 
+                text-decoration: none;
+                line-height: 1.6;
+                font-size: 16px;
+                transition: background 0.3s;
+            }
+
+                .sidebar a:hover {
+                    background-color: #575757;
+                }
+
+        
+        .dropdown-menu {
+            background-color: #444;
+            border: none;
+            width: 100%; 
+            padding-left: 20px;
+            display: none;
+            opacity: 0;
+            max-height: 0; 
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            position: relative; 
+        }
+
+        
+        .dropdown.active .dropdown-menu {
+            display: block;
+            opacity: 1;
+            max-height: 500px; 
+            position: relative; 
+        }
+
+
+
+        
+        .content {
+            margin-left: 255px;
+            margin-top: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+
+        .logout-container {
+            margin-top: auto;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div>
+            <a href="/">Home</a>
+            <a href="/profile">Profile</a>
+            <a href="/settings">Settings</a>
+        </div>
+        <div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <span class="text-white me-3">Welcome Back @User.Identity.Name </span>
+                <a href="/Account/Logout" class="btn btn-danger btn-sm">Logout</a>
+            }
+            else
+            {
+                <a href="/Account/Login" class="btn btn-primary btn-sm">Login</a>
+            }
+        </div>
+    </nav>
+
+    
+    <div class="sidebar">
+        <h2 class="text-center">Side Bar</h2>
+        
+        @await Html.PartialAsync("~/Areas/Admin/Views/News/ShowGroups.cshtml", ViewData["ShowGroups"] as IEnumerable<DataLayer.ShowGroupsViewModel>)
+        <a href="/Home/AboutUs">About Us</a>
+    </div>
+
+    
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+            dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var dropdown = this.parentElement;
+                    dropdown.classList.toggle("active");
+
+                    
+                    var menu = dropdown.querySelector(".dropdown-menu");
+                    if (dropdown.classList.contains("active")) {
+                        menu.style.maxHeight = menu.scrollHeight + "px"; 
+                    } else {
+                        menu.style.maxHeight = "0";
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+</html>

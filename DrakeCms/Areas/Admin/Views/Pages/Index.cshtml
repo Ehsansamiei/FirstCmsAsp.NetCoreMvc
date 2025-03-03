@@ -1,0 +1,195 @@
+﻿@model IEnumerable<DataLayer.Page>
+
+@{
+	ViewData["Title"] = "Index";
+	// Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@* Link of this page : /admin/pages *@
+
+
+
+<head>
+	<style>
+        /* استایل کلی برای صفحه */
+        .text-center h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* استایل برای دکمه‌ها */
+        a.btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /* استایل دکمه‌های "Create", "Back to Admin", "Refresh" */
+        a.btn-success {
+            background-color: #28a745;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a.btn-dark {
+            background-color: #343a40;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a.btn-info {
+            background-color: #17a2b8;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* استایل دکمه‌ها هنگام hover */
+        a.btn-success:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+        a.btn-dark:hover {
+            background-color: #23272b;
+            transform: translateY(-3px);
+        }
+
+        a.btn-info:hover {
+            background-color: #138496;
+            transform: translateY(-3px);
+        }
+
+        /* استایل برای جدول */
+        table.table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            /* استایل سلول‌ها */
+            table.table th,
+            table.table td {
+                padding: 12px;
+                text-align: center;
+                font-size: 16px;
+                border: 1px solid #ddd;
+            }
+
+            /* رنگ پس زمینه سرستون */
+            table.table th {
+                background-color: #f8f9fa;
+                font-weight: bold;
+            }
+
+            /* تغییر رنگ ردیف‌ها */
+            table.table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            table.table tr:hover {
+                background-color: #f1f1f1;
+            }
+
+            /* استایل برای لینک‌های جدول */
+            table.table td a {
+                margin: 0 5px;
+            }
+
+            /* استایل دکمه‌های داخل جدول */
+            table.table a.btn-sm {
+                font-size: 14px;
+                padding: 6px 12px;
+                border-radius: 4px;
+                display: inline-block;
+            }
+
+            /* دکمه‌های "Detail", "Edit", "Delete" */
+            table.table a.btn-info {
+                background-color: #17a2b8;
+                color: white;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            table.table a.btn-warning {
+                background-color: #ffc107;
+                color: white;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            table.table a.btn-danger {
+                background-color: #dc3545;
+                color: white;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            /* تغییر رنگ دکمه‌ها هنگام hover */
+            table.table a.btn-info:hover {
+                background-color: #138496;
+                transform: translateY(-3px);
+            }
+
+            table.table a.btn-warning:hover {
+                background-color: #e0a800;
+                transform: translateY(-3px);
+            }
+
+            table.table a.btn-danger:hover {
+                background-color: #c82333;
+                transform: translateY(-3px);
+            }
+
+
+	</style>
+</head>
+
+
+<div class="text-center">
+
+	<h2>Pages</h2>
+</div>
+
+<a class="btn btn-success" href="/Admin/Pages/Create">Create New</a>
+<hr />
+<a class="btn btn-dark" href="/Admin">Back To Admin Panel</a>
+<a class="btn btn-info" href="/Admin/Pages">Refresh</a>
+<hr />
+
+<table class="table table-bordered">
+	<tr>
+		<th>Image</th>
+		<th>Page Group</th>
+		<th>Title</th>
+		<th>Visit</th>
+		<th>ShowInSlider</th>
+		<th>CreateDate</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+
+			<td>
+                @* @item.ImageName *@
+                <img src="/PageImages/@item.ImageName" class="thumbnail" style="max-width:120px"/>
+            </td>
+			<td>@item.pageGroup.GroupTitile</td>
+			<td>@item.Title</td>
+			<td>@item.Visit</td>
+			<td>@item.ShowInSlider</td>
+			<td>@item.CreateDate</td>
+			<td>
+				<a class="btn btn-info btn-sm" href="/Admin/Pages/Details/@item.PageId">Detail</a>
+				<a class="btn btn-warning btn-sm" href="/Admin/Pages/Edit/@item.PageId">Edit</a>
+				<a class="btn btn-danger btn-sm" href="/Admin/Pages/Delete/@item.PageId">Delete</a>
+			</td>
+		</tr>
+	}
+</table>

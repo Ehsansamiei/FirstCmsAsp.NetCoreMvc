@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DataLayer.ShowGroupsViewModel>
+
+
+<head>
+    <style>
+        /* استایل عنوان News */
+        .news-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        /* استایل عدد داخل span */
+        .badge-count {
+            background-color: #333333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 8px;
+            display: inline-block;
+            min-width: 24px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+@if(Model != null && Model.Any())
+{
+    <div class="dropdown" id="newsDropdown">
+        <a class="dropdown-toggle d-block px-3 py-2" href="#" role="button">
+            <span>News</span>
+        </a>
+        <ul class="dropdown-menu">
+            @foreach (var item in Model)
+            {
+                <li><a class="dropdown-item" href="#">@item.GroupTitile<span class="badge-count">@item.PageCount</span></a></li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>No news categories available.</p>
+}
