@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D2K2hweXH7I=",
+  "dgSpecHash": "6P6SSQZIX04=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\DrakeCms\\DrakeCms.csproj",
+  "projectFilePath": "D:\\Projects\\MyProjects\\C#\\Asp.Net Core Mvc\\After\\Cms\\DrakeCms\\DrakeCms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\StockRayan\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\StockRayan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
